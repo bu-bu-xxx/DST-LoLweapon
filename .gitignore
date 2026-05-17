@@ -1,0 +1,4 @@
+server/models.local.json
+server/*.log
+.playwright-mcp/
+node_modules/

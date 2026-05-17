@@ -1,0 +1,1457 @@
+[
+  {
+    "title": "英雄联盟武器更新计划",
+    "anchor": "/#doc-sec-001-7f1d9870",
+    "chunk_id": "doc-sec-001-7f1d9870",
+    "children": [
+      {
+        "title": "前言：联盟武器特殊机制",
+        "anchor": "/#doc-sec-002-707a9111",
+        "chunk_id": "doc-sec-002-707a9111",
+        "children": [
+          {
+            "title": "额外位面伤害：",
+            "anchor": "/#doc-sec-003-15c8216d",
+            "chunk_id": "doc-sec-003-15c8216d",
+            "children": []
+          },
+          {
+            "title": "额外攻击力：",
+            "anchor": "/#doc-sec-004-7b1ede33",
+            "chunk_id": "doc-sec-004-7b1ede33",
+            "children": []
+          },
+          {
+            "title": "真实伤害：",
+            "anchor": "/#doc-sec-005-ff5bd410",
+            "chunk_id": "doc-sec-005-ff5bd410",
+            "children": []
+          },
+          {
+            "title": "生命偷取/全能吸血：",
+            "anchor": "/#doc-sec-006-63ff4fd7",
+            "chunk_id": "doc-sec-006-63ff4fd7",
+            "children": []
+          },
+          {
+            "title": "生命回复：",
+            "anchor": "/#doc-sec-007-997a30a7",
+            "chunk_id": "doc-sec-007-997a30a7",
+            "children": []
+          },
+          {
+            "title": "理智：",
+            "anchor": "/#doc-sec-008-2c9ba8c0",
+            "chunk_id": "doc-sec-008-2c9ba8c0",
+            "children": []
+          },
+          {
+            "title": "暴击：",
+            "anchor": "/#doc-sec-009-fd1f81c0",
+            "chunk_id": "doc-sec-009-fd1f81c0",
+            "children": []
+          },
+          {
+            "title": "攻速：",
+            "anchor": "/#doc-sec-010-3d9734bb",
+            "chunk_id": "doc-sec-010-3d9734bb",
+            "children": []
+          },
+          {
+            "title": "重伤：",
+            "anchor": "/#doc-sec-011-2ef4890e",
+            "chunk_id": "doc-sec-011-2ef4890e",
+            "children": []
+          },
+          {
+            "title": "护甲穿透：",
+            "anchor": "/#doc-sec-012-685cca47",
+            "chunk_id": "doc-sec-012-685cca47",
+            "children": []
+          },
+          {
+            "title": "法术穿透：",
+            "anchor": "/#doc-sec-013-bd91a414",
+            "chunk_id": "doc-sec-013-bd91a414",
+            "children": []
+          },
+          {
+            "title": "棱彩：",
+            "anchor": "/#doc-sec-014-3a0bf4a0",
+            "chunk_id": "doc-sec-014-3a0bf4a0",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S1：药水道具",
+        "anchor": "/#doc-sec-015-f81ceced",
+        "chunk_id": "doc-sec-015-f81ceced",
+        "children": [
+          {
+            "title": "【生命药水】（治疗栏）",
+            "anchor": "/#doc-sec-016-240fa340",
+            "chunk_id": "doc-sec-016-240fa340",
+            "children": []
+          },
+          {
+            "title": "【法力药水】（治疗栏）",
+            "anchor": "/#doc-sec-017-2374348b",
+            "chunk_id": "doc-sec-017-2374348b",
+            "children": []
+          },
+          {
+            "title": "【复用型药水】（治疗栏）",
+            "anchor": "/#doc-sec-018-de51c85d",
+            "chunk_id": "doc-sec-018-de51c85d",
+            "children": []
+          },
+          {
+            "title": "【腐败药水】（治疗栏）",
+            "anchor": "/#doc-sec-019-30f0294c",
+            "chunk_id": "doc-sec-019-30f0294c",
+            "children": []
+          },
+          {
+            "title": "【活力夹心饼干】（烹饪栏）",
+            "anchor": "/#doc-sec-020-f911e608",
+            "chunk_id": "doc-sec-020-f911e608",
+            "children": []
+          },
+          {
+            "title": "【魄罗佳肴】（烹饪栏）",
+            "anchor": "/#doc-sec-021-4646cb1f",
+            "chunk_id": "doc-sec-021-4646cb1f",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S2：出门装备",
+        "anchor": "/#doc-sec-022-3bfb9a72",
+        "chunk_id": "doc-sec-022-3bfb9a72",
+        "children": [
+          {
+            "title": "【多兰之刃】（武器栏）",
+            "anchor": "/#doc-sec-023-6b20afd0",
+            "chunk_id": "doc-sec-023-6b20afd0",
+            "children": []
+          },
+          {
+            "title": "【多兰之盾】（护甲栏）",
+            "anchor": "/#doc-sec-024-28dfd3bf",
+            "chunk_id": "doc-sec-024-28dfd3bf",
+            "children": []
+          },
+          {
+            "title": "【多兰之戒】（魔法栏）",
+            "anchor": "/#doc-sec-025-929c1563",
+            "chunk_id": "doc-sec-025-929c1563",
+            "children": []
+          },
+          {
+            "title": "【萃取】（武器栏）",
+            "anchor": "/#doc-sec-026-92f3b005",
+            "chunk_id": "doc-sec-026-92f3b005",
+            "children": []
+          },
+          {
+            "title": "【猎人的宽刃刀】（武器栏）",
+            "anchor": "/#doc-sec-027-44e4f360",
+            "chunk_id": "doc-sec-027-44e4f360",
+            "children": []
+          },
+          {
+            "title": "【猎人的护身符】（魔法栏）",
+            "anchor": "/#doc-sec-028-e534092d",
+            "chunk_id": "doc-sec-028-e534092d",
+            "children": []
+          },
+          {
+            "title": "【游击者的军刀】（无配方）",
+            "anchor": "/#doc-sec-029-721aa518",
+            "chunk_id": "doc-sec-029-721aa518",
+            "children": []
+          },
+          {
+            "title": "【追猎者的刀锋】（无配方）",
+            "anchor": "/#doc-sec-030-72667e3a",
+            "chunk_id": "doc-sec-030-72667e3a",
+            "children": []
+          },
+          {
+            "title": "【女神之泪】（月岛科技栏）",
+            "anchor": "/#doc-sec-031-8ce751f4",
+            "chunk_id": "doc-sec-031-8ce751f4",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S3：战士装备",
+        "anchor": "/#doc-sec-032-bb94a0ad",
+        "chunk_id": "doc-sec-032-bb94a0ad",
+        "children": [
+          {
+            "title": "【破舰者】（远古栏）",
+            "anchor": "/#doc-sec-033-8322a0cf",
+            "chunk_id": "doc-sec-033-8322a0cf",
+            "children": []
+          },
+          {
+            "title": "【铁刺鞭】（武器栏）",
+            "anchor": "/#doc-sec-034-21bcdf1c",
+            "chunk_id": "doc-sec-034-21bcdf1c",
+            "children": []
+          },
+          {
+            "title": "【渴血战斧】（暗影术基座栏）",
+            "anchor": "/#doc-sec-035-00bc0c57",
+            "chunk_id": "doc-sec-035-00bc0c57",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S4：战士装备",
+        "anchor": "/#doc-sec-036-b449e3e6",
+        "chunk_id": "doc-sec-036-b449e3e6",
+        "children": [
+          {
+            "title": "【心之钢】（护甲栏）",
+            "anchor": "/#doc-sec-037-40832b14",
+            "chunk_id": "doc-sec-037-40832b14",
+            "children": []
+          },
+          {
+            "title": "【提亚马特】（武器栏）",
+            "anchor": "/#doc-sec-038-9122ae26",
+            "chunk_id": "doc-sec-038-9122ae26",
+            "children": []
+          },
+          {
+            "title": "【巨型九头蛇】（武器栏）",
+            "anchor": "/#doc-sec-039-2100bf42",
+            "chunk_id": "doc-sec-039-2100bf42",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S5：法师装备",
+        "anchor": "/#doc-sec-040-ff6a1264",
+        "chunk_id": "doc-sec-040-ff6a1264",
+        "children": [
+          {
+            "title": "【峡谷制造者】（远古栏）",
+            "anchor": "/#doc-sec-041-f190b200",
+            "chunk_id": "doc-sec-041-f190b200",
+            "children": []
+          },
+          {
+            "title": "【纳什之牙】（魔法栏）",
+            "anchor": "/#doc-sec-042-854ce812",
+            "chunk_id": "doc-sec-042-854ce812",
+            "children": []
+          },
+          {
+            "title": "【瑞莱的冰晶节杖】（远古栏）",
+            "anchor": "/#doc-sec-043-1fefef78",
+            "chunk_id": "doc-sec-043-1fefef78",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S6：战士装备",
+        "anchor": "/#doc-sec-044-3f2eaa51",
+        "chunk_id": "doc-sec-044-3f2eaa51",
+        "children": [
+          {
+            "title": "【黑色切割者】（武器栏）",
+            "anchor": "/#doc-sec-045-80aeffc4",
+            "chunk_id": "doc-sec-045-80aeffc4",
+            "children": []
+          },
+          {
+            "title": "【破败王者之刃】（月岛科技栏）",
+            "anchor": "/#doc-sec-046-363c1ebc",
+            "chunk_id": "doc-sec-046-363c1ebc",
+            "children": []
+          },
+          {
+            "title": "【挺进破坏者】（辉煌铁匠铺栏）",
+            "anchor": "/#doc-sec-047-846fbcc0",
+            "chunk_id": "doc-sec-047-846fbcc0",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S7：战士装备",
+        "anchor": "/#doc-sec-048-d4b22556",
+        "chunk_id": "doc-sec-048-d4b22556",
+        "children": [
+          {
+            "title": "【三相之力】（远古栏）",
+            "anchor": "/#doc-sec-049-79154f4f",
+            "chunk_id": "doc-sec-049-79154f4f",
+            "children": []
+          },
+          {
+            "title": "【耀光】（月岛科技栏）",
+            "anchor": "/#doc-sec-050-cb5aadfa",
+            "chunk_id": "doc-sec-050-cb5aadfa",
+            "children": []
+          },
+          {
+            "title": "【神圣分离者】（远古栏）",
+            "anchor": "/#doc-sec-051-da98b44a",
+            "chunk_id": "doc-sec-051-da98b44a",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S8：坦克装备",
+        "anchor": "/#doc-sec-052-3e459387",
+        "chunk_id": "doc-sec-052-3e459387",
+        "children": [
+          {
+            "title": "【霸王血铠】（护甲栏）",
+            "anchor": "/#doc-sec-053-6a526a0e",
+            "chunk_id": "doc-sec-053-6a526a0e",
+            "children": []
+          },
+          {
+            "title": "【恶魔之拥】（护甲栏）",
+            "anchor": "/#doc-sec-054-73f62b91",
+            "chunk_id": "doc-sec-054-73f62b91",
+            "children": []
+          },
+          {
+            "title": "【狂徒铠甲】（护甲栏）",
+            "anchor": "/#doc-sec-055-253b2c0c",
+            "chunk_id": "doc-sec-055-253b2c0c",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S9：法师装备",
+        "anchor": "/#doc-sec-056-bd8e8be3",
+        "chunk_id": "doc-sec-056-bd8e8be3",
+        "children": [
+          {
+            "title": "【灭世者的死亡之帽】（暗影术基座栏）",
+            "anchor": "/#doc-sec-057-9ee84b58",
+            "chunk_id": "doc-sec-057-9ee84b58",
+            "children": []
+          },
+          {
+            "title": "【无用大棒】（魔法栏）",
+            "anchor": "/#doc-sec-058-7973d96a",
+            "chunk_id": "doc-sec-058-7973d96a",
+            "children": []
+          },
+          {
+            "title": "【巫妖之祸】（远古栏）",
+            "anchor": "/#doc-sec-059-eaad89e4",
+            "chunk_id": "doc-sec-059-eaad89e4",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S10：辅助装备",
+        "anchor": "/#doc-sec-060-a347b360",
+        "chunk_id": "doc-sec-060-a347b360",
+        "children": [
+          {
+            "title": "【引路者】（储物栏）",
+            "anchor": "/#doc-sec-061-504d8924",
+            "chunk_id": "doc-sec-061-504d8924",
+            "children": []
+          },
+          {
+            "title": "【戒备眼石】（远古栏）",
+            "anchor": "/#doc-sec-062-f6dcc8c7",
+            "chunk_id": "doc-sec-062-f6dcc8c7",
+            "children": []
+          },
+          {
+            "title": "【警觉眼石】（远古栏）",
+            "anchor": "/#doc-sec-063-651618e3",
+            "chunk_id": "doc-sec-063-651618e3",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S11：追加装备",
+        "anchor": "/#doc-sec-064-3fb3876e",
+        "chunk_id": "doc-sec-064-3fb3876e",
+        "children": [
+          {
+            "title": "【鬼索的狂暴之刃】（武器栏）",
+            "anchor": "/#doc-sec-065-df8d3b3d",
+            "chunk_id": "doc-sec-065-df8d3b3d",
+            "children": []
+          },
+          {
+            "title": "【爆裂魔杖】（魔法栏）",
+            "anchor": "/#doc-sec-066-34ee20a1",
+            "chunk_id": "doc-sec-066-34ee20a1",
+            "children": []
+          },
+          {
+            "title": "【日炎圣盾】（护甲栏）",
+            "anchor": "/#doc-sec-067-c0453a31",
+            "chunk_id": "doc-sec-067-c0453a31",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S12：法师装备",
+        "anchor": "/#doc-sec-068-82c69fb1",
+        "chunk_id": "doc-sec-068-82c69fb1",
+        "children": [
+          {
+            "title": "【增幅典籍】（魔法栏）",
+            "anchor": "/#doc-sec-069-6c0ee83d",
+            "chunk_id": "doc-sec-069-6c0ee83d",
+            "children": []
+          },
+          {
+            "title": "【黑暗封印】（魔法栏）",
+            "anchor": "/#doc-sec-070-794a5def",
+            "chunk_id": "doc-sec-070-794a5def",
+            "children": []
+          },
+          {
+            "title": "【梅贾的窃魂卷】（暗影术基座栏）",
+            "anchor": "/#doc-sec-071-fb94e0ff",
+            "chunk_id": "doc-sec-071-fb94e0ff",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S13：战士装备",
+        "anchor": "/#doc-sec-072-d39795f9",
+        "chunk_id": "doc-sec-072-d39795f9",
+        "children": [
+          {
+            "title": "【星蚀】（武器栏）",
+            "anchor": "/#doc-sec-073-a02c5a3d",
+            "chunk_id": "doc-sec-073-a02c5a3d",
+            "children": []
+          },
+          {
+            "title": "【焚天】（远古栏）",
+            "anchor": "/#doc-sec-074-7dd519cd",
+            "chunk_id": "doc-sec-074-7dd519cd",
+            "children": []
+          },
+          {
+            "title": "【炼金朋克链锯剑】（武器栏）",
+            "anchor": "/#doc-sec-075-da52e24c",
+            "chunk_id": "doc-sec-075-da52e24c",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S14：暴击装备",
+        "anchor": "/#doc-sec-076-270ca3dd",
+        "chunk_id": "doc-sec-076-270ca3dd",
+        "children": [
+          {
+            "title": "【无尽之刃】（远古栏）",
+            "anchor": "/#doc-sec-077-14953079",
+            "chunk_id": "doc-sec-077-14953079",
+            "children": []
+          },
+          {
+            "title": "【斯塔缇克电刃】（武器栏）",
+            "anchor": "/#doc-sec-078-4bd7106a",
+            "chunk_id": "doc-sec-078-4bd7106a",
+            "children": []
+          },
+          {
+            "title": "【斯塔缇克电刀】（无配方）",
+            "anchor": "/#doc-sec-079-a160eb91",
+            "chunk_id": "doc-sec-079-a160eb91",
+            "children": []
+          },
+          {
+            "title": "【收集者】（武器栏）",
+            "anchor": "/#doc-sec-080-4f024c79",
+            "chunk_id": "doc-sec-080-4f024c79",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S15：坦克装备",
+        "anchor": "/#doc-sec-081-d4e4bbc7",
+        "chunk_id": "doc-sec-081-d4e4bbc7",
+        "children": [
+          {
+            "title": "【狂妄】（远古栏）",
+            "anchor": "/#doc-sec-082-816658bc",
+            "chunk_id": "doc-sec-082-816658bc",
+            "children": []
+          },
+          {
+            "title": "【棘刺背心】（护甲栏）",
+            "anchor": "/#doc-sec-083-1e179dac",
+            "chunk_id": "doc-sec-083-1e179dac",
+            "children": []
+          },
+          {
+            "title": "【荆棘之甲】（护甲栏）",
+            "anchor": "/#doc-sec-084-9e482c5f",
+            "chunk_id": "doc-sec-084-9e482c5f",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S16：特殊装备",
+        "anchor": "/#doc-sec-085-bb5a7dbf",
+        "chunk_id": "doc-sec-085-bb5a7dbf",
+        "children": [
+          {
+            "title": "【破碎王后之冕】（月岛科技栏）",
+            "anchor": "/#doc-sec-086-e83cc1cb",
+            "chunk_id": "doc-sec-086-e83cc1cb",
+            "children": []
+          },
+          {
+            "title": "【秒表】（工具栏）",
+            "anchor": "/#doc-sec-087-3c2269d2",
+            "chunk_id": "doc-sec-087-3c2269d2",
+            "children": []
+          },
+          {
+            "title": "【中娅沙漏】（月岛科技栏）",
+            "anchor": "/#doc-sec-088-23a18309",
+            "chunk_id": "doc-sec-088-23a18309",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S17：法师装备",
+        "anchor": "/#doc-sec-089-d5b3b598",
+        "chunk_id": "doc-sec-089-d5b3b598",
+        "children": [
+          {
+            "title": "【卢登的回声】（魔法栏）",
+            "anchor": "/#doc-sec-090-a30d99be",
+            "chunk_id": "doc-sec-090-a30d99be",
+            "children": []
+          },
+          {
+            "title": "【兰德里的折磨】（辉煌铁匠铺栏）",
+            "anchor": "/#doc-sec-091-b33fa1c9",
+            "chunk_id": "doc-sec-091-b33fa1c9",
+            "children": []
+          },
+          {
+            "title": "【遗失的章节】（月岛科技栏）",
+            "anchor": "/#doc-sec-092-ad44537f",
+            "chunk_id": "doc-sec-092-ad44537f",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S18：暴击装备",
+        "anchor": "/#doc-sec-093-bb280222",
+        "chunk_id": "doc-sec-093-bb280222",
+        "children": [
+          {
+            "title": "【饮血剑】（暗影术基座栏）",
+            "anchor": "/#doc-sec-094-564a1338",
+            "chunk_id": "doc-sec-094-564a1338",
+            "children": []
+          },
+          {
+            "title": "【岚切】（武器栏）",
+            "anchor": "/#doc-sec-095-7fe74a21",
+            "chunk_id": "doc-sec-095-7fe74a21",
+            "children": []
+          },
+          {
+            "title": "【海妖杀手】（武器栏）",
+            "anchor": "/#doc-sec-096-1f3ac63c",
+            "chunk_id": "doc-sec-096-1f3ac63c",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S19：女神泪装备",
+        "anchor": "/#doc-sec-097-834692c7",
+        "chunk_id": "doc-sec-097-834692c7",
+        "children": [
+          {
+            "title": "【大天使之杖】（月岛科技栏）",
+            "anchor": "/#doc-sec-098-0a612b43",
+            "chunk_id": "doc-sec-098-0a612b43",
+            "children": []
+          },
+          {
+            "title": "【炽天使之拥】（无配方）",
+            "anchor": "/#doc-sec-099-05aa21a2",
+            "chunk_id": "doc-sec-099-05aa21a2",
+            "children": []
+          },
+          {
+            "title": "【魔宗】（月岛科技栏）",
+            "anchor": "/#doc-sec-100-dc1577a3",
+            "chunk_id": "doc-sec-100-dc1577a3",
+            "children": []
+          },
+          {
+            "title": "【魔切】（无配方）",
+            "anchor": "/#doc-sec-101-fd87808c",
+            "chunk_id": "doc-sec-101-fd87808c",
+            "children": []
+          },
+          {
+            "title": "【凛冬之临】（月岛科技栏）",
+            "anchor": "/#doc-sec-102-139efd0b",
+            "chunk_id": "doc-sec-102-139efd0b",
+            "children": []
+          },
+          {
+            "title": "【末日寒冬】（无配方）",
+            "anchor": "/#doc-sec-103-c3a18218",
+            "chunk_id": "doc-sec-103-c3a18218",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S20：坦克装备",
+        "anchor": "/#doc-sec-104-926b2887",
+        "chunk_id": "doc-sec-104-926b2887",
+        "children": [
+          {
+            "title": "【冰脉护手】（护甲栏）",
+            "anchor": "/#doc-sec-105-6751bc57",
+            "chunk_id": "doc-sec-105-6751bc57",
+            "children": []
+          },
+          {
+            "title": "【守望者铠甲】（护甲栏）",
+            "anchor": "/#doc-sec-106-02fb5fe1",
+            "chunk_id": "doc-sec-106-02fb5fe1",
+            "children": []
+          },
+          {
+            "title": "【冰霜之心】（护甲栏）",
+            "anchor": "/#doc-sec-107-9a481953",
+            "chunk_id": "doc-sec-107-9a481953",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S21：法师装备",
+        "anchor": "/#doc-sec-108-353e59db",
+        "chunk_id": "doc-sec-108-353e59db",
+        "children": [
+          {
+            "title": "【无限法球】（辉煌铁匠铺栏）",
+            "anchor": "/#doc-sec-109-bbc1daf0",
+            "chunk_id": "doc-sec-109-bbc1daf0",
+            "children": []
+          },
+          {
+            "title": "【女妖面纱】（辉煌铁匠铺栏）",
+            "anchor": "/#doc-sec-110-15befac7",
+            "chunk_id": "doc-sec-110-15befac7",
+            "children": []
+          },
+          {
+            "title": "【帝国指令】（魔法栏）",
+            "anchor": "/#doc-sec-111-93cd5689",
+            "chunk_id": "doc-sec-111-93cd5689",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S22：法师装备",
+        "anchor": "/#doc-sec-112-b74c0050",
+        "chunk_id": "doc-sec-112-b74c0050",
+        "children": [
+          {
+            "title": "【星界驱驰】（护甲栏）",
+            "anchor": "/#doc-sec-113-074c348e",
+            "chunk_id": "doc-sec-113-074c348e",
+            "children": []
+          },
+          {
+            "title": "【永生花的双生守护】（护甲栏）",
+            "anchor": "/#doc-sec-114-2de578b7",
+            "chunk_id": "doc-sec-114-2de578b7",
+            "children": []
+          },
+          {
+            "title": "【璀璨回响】（暗影术基座栏）",
+            "anchor": "/#doc-sec-115-3f405467",
+            "chunk_id": "doc-sec-115-3f405467",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S23：战士装备",
+        "anchor": "/#doc-sec-116-80ac9106",
+        "chunk_id": "doc-sec-116-80ac9106",
+        "children": [
+          {
+            "title": "【恶火小斧】（暗影术基座栏）",
+            "anchor": "/#doc-sec-117-83ed01a6",
+            "chunk_id": "doc-sec-117-83ed01a6",
+            "children": []
+          },
+          {
+            "title": "【斯特拉克的挑战护手】（暗影术基座栏）",
+            "anchor": "/#doc-sec-118-59c03610",
+            "chunk_id": "doc-sec-118-59c03610",
+            "children": []
+          },
+          {
+            "title": "【守护天使】（辉煌铁匠铺栏）",
+            "anchor": "/#doc-sec-119-f0303cdb",
+            "chunk_id": "doc-sec-119-f0303cdb",
+            "children": []
+          },
+          {
+            "title": "【投机者之刃】（无配方）",
+            "anchor": "/#doc-sec-120-26c09002",
+            "chunk_id": "doc-sec-120-26c09002",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S24：特殊道具",
+        "anchor": "/#doc-sec-121-79f50ef8",
+        "chunk_id": "doc-sec-121-79f50ef8",
+        "children": [
+          {
+            "title": "【海克斯宝箱】（储物栏）",
+            "anchor": "/#doc-sec-122-05709807",
+            "chunk_id": "doc-sec-122-05709807",
+            "children": []
+          },
+          {
+            "title": "【杰作宝箱】（远古栏）",
+            "anchor": "/#doc-sec-123-936600a5",
+            "chunk_id": "doc-sec-123-936600a5",
+            "children": []
+          },
+          {
+            "title": "【以绪塔尔种子罐】（园艺栏）",
+            "anchor": "/#doc-sec-124-b9e5b105",
+            "chunk_id": "doc-sec-124-b9e5b105",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S25：暴击装备",
+        "anchor": "/#doc-sec-125-bd4f9f86",
+        "chunk_id": "doc-sec-125-bd4f9f86",
+        "children": [
+          {
+            "title": "【神秘之剑】（武器栏）",
+            "anchor": "/#doc-sec-126-14021e78",
+            "chunk_id": "doc-sec-126-14021e78",
+            "children": []
+          },
+          {
+            "title": "【灵恸】（远古栏）",
+            "anchor": "/#doc-sec-127-bd818cda",
+            "chunk_id": "doc-sec-127-bd818cda",
+            "children": []
+          },
+          {
+            "title": "【纳沃利迅刃】（辉煌铁匠铺栏）",
+            "anchor": "/#doc-sec-128-b6c60a3e",
+            "chunk_id": "doc-sec-128-b6c60a3e",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S26：终极装备！",
+        "anchor": "/#doc-sec-129-b88ac195",
+        "chunk_id": "doc-sec-129-b88ac195",
+        "children": [
+          {
+            "title": "【金铲铲】（远古栏）",
+            "anchor": "/#doc-sec-130-ab83dea4",
+            "chunk_id": "doc-sec-130-ab83dea4",
+            "children": []
+          },
+          {
+            "title": "【飞升护符】（远古栏）",
+            "anchor": "/#doc-sec-131-fc8e03a5",
+            "chunk_id": "doc-sec-131-fc8e03a5",
+            "children": []
+          },
+          {
+            "title": "【龙心】（无配方）",
+            "anchor": "/#doc-sec-132-d27e6f6f",
+            "chunk_id": "doc-sec-132-d27e6f6f",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S27：追加装备",
+        "anchor": "/#doc-sec-133-b23d67bf",
+        "chunk_id": "doc-sec-133-b23d67bf",
+        "children": [
+          {
+            "title": "【不朽盾弓】（暗影术基座栏）",
+            "anchor": "/#doc-sec-134-83abb476",
+            "chunk_id": "doc-sec-134-83abb476",
+            "children": []
+          },
+          {
+            "title": "【狂热】（武器栏）",
+            "anchor": "/#doc-sec-135-7627efe2",
+            "chunk_id": "doc-sec-135-7627efe2",
+            "children": []
+          },
+          {
+            "title": "【正义荣耀】（远古栏）",
+            "anchor": "/#doc-sec-136-511a7572",
+            "chunk_id": "doc-sec-136-511a7572",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S28：特殊建筑",
+        "anchor": "/#doc-sec-137-a70eeae0",
+        "chunk_id": "doc-sec-137-a70eeae0",
+        "children": [
+          {
+            "title": "【防御塔】（建筑栏）",
+            "anchor": "/#doc-sec-138-a9e3aa2c",
+            "chunk_id": "doc-sec-138-a9e3aa2c",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S29：补充装备",
+        "anchor": "/#doc-sec-139-c042bd9b",
+        "chunk_id": "doc-sec-139-c042bd9b",
+        "children": [
+          {
+            "title": "【涡轮炼金罐】（护甲栏）",
+            "anchor": "/#doc-sec-140-dd55202d",
+            "chunk_id": "doc-sec-140-dd55202d",
+            "children": []
+          },
+          {
+            "title": "【暴风大剑】（武器栏）",
+            "anchor": "/#doc-sec-141-27443d0b",
+            "chunk_id": "doc-sec-141-27443d0b",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S30：护符装备",
+        "anchor": "/#doc-sec-142-ead04f8b",
+        "chunk_id": "doc-sec-142-ead04f8b",
+        "children": [
+          {
+            "title": "【无终恨意】（辉煌铁匠铺栏）",
+            "anchor": "/#doc-sec-143-a6dfc72e",
+            "chunk_id": "doc-sec-143-a6dfc72e",
+            "children": []
+          },
+          {
+            "title": "【幻影之舞】（月岛科技栏）",
+            "anchor": "/#doc-sec-144-50ab9269",
+            "chunk_id": "doc-sec-144-50ab9269",
+            "children": []
+          },
+          {
+            "title": "【残疫】（暗影术基座栏）",
+            "anchor": "/#doc-sec-145-62b5b95a",
+            "chunk_id": "doc-sec-145-62b5b95a",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S31：战士装备",
+        "anchor": "/#doc-sec-146-410f14cf",
+        "chunk_id": "doc-sec-146-410f14cf",
+        "children": [
+          {
+            "title": "【贪欲九头蛇】（武器栏）",
+            "anchor": "/#doc-sec-147-4bf563a3",
+            "chunk_id": "doc-sec-147-4bf563a3",
+            "children": []
+          },
+          {
+            "title": "【夺萃之镰】（辉煌铁匠铺栏）",
+            "anchor": "/#doc-sec-148-ee3d4ab4",
+            "chunk_id": "doc-sec-148-ee3d4ab4",
+            "children": []
+          },
+          {
+            "title": "【班德尔玻璃镜】（月岛科技栏）",
+            "anchor": "/#doc-sec-149-7fece427",
+            "chunk_id": "doc-sec-149-7fece427",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S32：过渡装备",
+        "anchor": "/#doc-sec-150-02847358",
+        "chunk_id": "doc-sec-150-02847358",
+        "children": [
+          {
+            "title": "【考尔菲德的战锤】（工具栏）",
+            "anchor": "/#doc-sec-151-3145437c",
+            "chunk_id": "doc-sec-151-3145437c",
+            "children": []
+          },
+          {
+            "title": "【巨人腰带】（护甲栏）",
+            "anchor": "/#doc-sec-152-763942b3",
+            "chunk_id": "doc-sec-152-763942b3",
+            "children": []
+          },
+          {
+            "title": "【幽魂面具】（月岛科技栏）",
+            "anchor": "/#doc-sec-153-b6a9b9f5",
+            "chunk_id": "doc-sec-153-b6a9b9f5",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S33：远程武器",
+        "anchor": "/#doc-sec-154-8e55f5de",
+        "chunk_id": "doc-sec-154-8e55f5de",
+        "children": [
+          {
+            "title": "【反曲之弓】（武器栏）",
+            "anchor": "/#doc-sec-155-a8aebf53",
+            "chunk_id": "doc-sec-155-a8aebf53",
+            "children": []
+          },
+          {
+            "title": "【最后的轻语】（武器栏）",
+            "anchor": "/#doc-sec-156-8708e4e0",
+            "chunk_id": "doc-sec-156-8708e4e0",
+            "children": []
+          },
+          {
+            "title": "【正午箭袋】（武器栏）",
+            "anchor": "/#doc-sec-157-25264ac6",
+            "chunk_id": "doc-sec-157-25264ac6",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S34：过渡装备",
+        "anchor": "/#doc-sec-158-235dd505",
+        "chunk_id": "doc-sec-158-235dd505",
+        "children": [
+          {
+            "title": "【净蚀】（工具栏）",
+            "anchor": "/#doc-sec-159-8f4ecd6f",
+            "chunk_id": "doc-sec-159-8f4ecd6f",
+            "children": []
+          },
+          {
+            "title": "【缚炉之斧】（月岛科技栏）",
+            "anchor": "/#doc-sec-160-7d84f55c",
+            "chunk_id": "doc-sec-160-7d84f55c",
+            "children": []
+          },
+          {
+            "title": "【吸血鬼节杖】（魔法栏）",
+            "anchor": "/#doc-sec-161-6d13ef25",
+            "chunk_id": "doc-sec-161-6d13ef25",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S35：坦克装备",
+        "anchor": "/#doc-sec-162-1a5797e7",
+        "chunk_id": "doc-sec-162-1a5797e7",
+        "children": [
+          {
+            "title": "【斑比的熔渣】（远古栏）",
+            "anchor": "/#doc-sec-163-d3d1e256",
+            "chunk_id": "doc-sec-163-d3d1e256",
+            "children": []
+          },
+          {
+            "title": "【燃烧宝石】（魔法栏）",
+            "anchor": "/#doc-sec-164-b1cd0681",
+            "chunk_id": "doc-sec-164-b1cd0681",
+            "children": []
+          },
+          {
+            "title": "【冰川圆盾】（月岛科技栏）",
+            "anchor": "/#doc-sec-165-7e339cc0",
+            "chunk_id": "doc-sec-165-7e339cc0",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S36：补充装备",
+        "anchor": "/#doc-sec-166-17deef1f",
+        "chunk_id": "doc-sec-166-17deef1f",
+        "children": [
+          {
+            "title": "【灵巧披风】（服装栏）",
+            "anchor": "/#doc-sec-167-d0dd711e",
+            "chunk_id": "doc-sec-167-d0dd711e",
+            "children": []
+          },
+          {
+            "title": "【锁子甲】（护甲栏）",
+            "anchor": "/#doc-sec-168-0ae9e1fa",
+            "chunk_id": "doc-sec-168-0ae9e1fa",
+            "children": []
+          },
+          {
+            "title": "【恶魔法典】（魔法栏）",
+            "anchor": "/#doc-sec-169-e7674708",
+            "chunk_id": "doc-sec-169-e7674708",
+            "children": []
+          }
+        ]
+      },
+      {
+        "title": "S37：辅助装备",
+        "anchor": "/#doc-sec-170-51c552ef",
+        "chunk_id": "doc-sec-170-51c552ef",
+        "children": [
+          {
+            "title": "【救赎】（月岛科技栏）",
+            "anchor": "/#doc-sec-171-2448fa90",
+            "chunk_id": "doc-sec-171-2448fa90",
+            "children": []
+          },
+          {
+            "title": "套装效果：",
+            "anchor": "/#doc-sec-172-65c71216",
+            "chunk_id": "doc-sec-172-65c71216",
+            "children": []
+          },
+          {
+            "title": "【骸骨镀层】免疫一次伤害，冷却时间20秒。",
+            "anchor": "/#doc-sec-173-6d0fc638",
+            "chunk_id": "doc-sec-173-6d0fc638",
+            "children": []
+          },
+          {
+            "title": "【凯旋】击杀目标回复自身3点生命值和3点理智值。",
+            "anchor": "/#doc-sec-174-414779aa",
+            "chunk_id": "doc-sec-174-414779aa",
+            "children": []
+          },
+          {
+            "title": "【诸神黄昏】血量低于30%时免疫击飞和受击硬直，获得20%移速，无冷却。",
+            "anchor": "/#doc-sec-175-d43cfe39",
+            "chunk_id": "doc-sec-175-d43cfe39",
+            "children": []
+          },
+          {
+            "title": "【德玛西亚正义】暴风大剑的强化攻击命中后会召唤一道闪电，造成20+敌方已损生命值10%的额外真实伤害。",
+            "anchor": "/#doc-sec-176-8b0daf3a",
+            "chunk_id": "doc-sec-176-8b0daf3a",
+            "children": []
+          },
+          {
+            "title": "【迅捷步伐】攻击后提升20%移速持续2秒，并回复3生命值3理智值，冷却时间5秒。",
+            "anchor": "/#doc-sec-177-50ec3db3",
+            "chunk_id": "doc-sec-177-50ec3db3",
+            "children": []
+          },
+          {
+            "title": "【致命节奏】羊刀攻速叠满后额外增加20%攻速。",
+            "anchor": "/#doc-sec-178-142e8c8b",
+            "chunk_id": "doc-sec-178-142e8c8b",
+            "children": []
+          },
+          {
+            "title": "【金色锋刃】累计攻击85次会额外掉落15金块",
+            "anchor": "/#doc-sec-179-b475e51d",
+            "chunk_id": "doc-sec-179-b475e51d",
+            "children": []
+          },
+          {
+            "title": "【哀悼】伤害提升20%。",
+            "anchor": "/#doc-sec-180-622d5343",
+            "chunk_id": "doc-sec-180-622d5343",
+            "children": []
+          },
+          {
+            "title": "【君命已决】伤害提升100%，且雾之锋和痛贯天灵的冷却缩减至5秒。",
+            "anchor": "/#doc-sec-181-218318ac",
+            "chunk_id": "doc-sec-181-218318ac",
+            "children": []
+          },
+          {
+            "title": "【洞悉之冠】每10秒恢复3点理智，增加10%移速。",
+            "anchor": "/#doc-sec-182-9d8ca83e",
+            "chunk_id": "doc-sec-182-9d8ca83e",
+            "children": []
+          },
+          {
+            "title": "【不灭之握】攻击造成自身最大生命值5%的额外位面伤害，治疗自身最大生命值2%的血量，冷却时间4秒。",
+            "anchor": "/#doc-sec-183-9a4f2345",
+            "chunk_id": "doc-sec-183-9a4f2345",
+            "children": []
+          },
+          {
+            "title": "【永恒折磨】毒雾附带30%减速效果，持续1秒，每次攻击附带0.5层冰冻。",
+            "anchor": "/#doc-sec-184-97b1f66c",
+            "chunk_id": "doc-sec-184-97b1f66c",
+            "children": []
+          },
+          {
+            "title": "【电击疗法】毒雾附带连锁闪电，会触发电刀的连锁闪电效果，每次触发后有10秒冷却。",
+            "anchor": "/#doc-sec-185-ce40521f",
+            "chunk_id": "doc-sec-185-ce40521f",
+            "children": []
+          },
+          {
+            "title": "【荣耀行刑】击杀boss单位时获得15个金块的赏金奖励。",
+            "anchor": "/#doc-sec-186-bd897670",
+            "chunk_id": "doc-sec-186-bd897670",
+            "children": []
+          },
+          {
+            "title": "【残暴】增加10额外位面伤害。",
+            "anchor": "/#doc-sec-187-96a8545a",
+            "chunk_id": "doc-sec-187-96a8545a",
+            "children": []
+          },
+          {
+            "title": "【恶意中伤】荆棘之甲反伤附带等同于狂妄层数的额外真实伤害。",
+            "anchor": "/#doc-sec-188-811970a4",
+            "chunk_id": "doc-sec-188-811970a4",
+            "children": []
+          },
+          {
+            "title": "【彻底疯狂】诺克萨斯断头台伤害翻倍。",
+            "anchor": "/#doc-sec-189-cdee2437",
+            "chunk_id": "doc-sec-189-cdee2437",
+            "children": []
+          },
+          {
+            "title": "【致命节奏】每次暴击叠加 2 点攻速，最多叠加 12点攻速，叠满后获得1点吸血，持续致脱战。",
+            "anchor": "/#doc-sec-190-5b2eb99b",
+            "chunk_id": "doc-sec-190-5b2eb99b",
+            "children": []
+          },
+          {
+            "title": "【神圣祝福】攻击后提升20%攻速持续3秒，并回复3生命值3理智值，冷却时间6秒。",
+            "anchor": "/#doc-sec-191-1f733ef6",
+            "chunk_id": "doc-sec-191-1f733ef6",
+            "children": []
+          },
+          {
+            "title": "【余烬之冠】攻击造成每0.5秒6点的真实伤害灼烧和10%减速，持续5秒，无冷却。",
+            "anchor": "/#doc-sec-192-664b4719",
+            "chunk_id": "doc-sec-192-664b4719",
+            "children": []
+          },
+          {
+            "title": "【征服者】每次攻击叠加2点攻击力，最多叠加16攻击力，叠满后获得2点吸血，持续5秒，无冷却。",
+            "anchor": "/#doc-sec-193-c5a6c14f",
+            "chunk_id": "doc-sec-193-c5a6c14f",
+            "children": []
+          },
+          {
+            "title": "【征战之路】获得等同于自身移速5倍的额外攻击力。",
+            "anchor": "/#doc-sec-194-bcc474af",
+            "chunk_id": "doc-sec-194-bcc474af",
+            "children": []
+          },
+          {
+            "title": "【强攻】第3次攻击额外造成80位面伤害，增幅自身10%伤害，持续6秒，冷却10秒",
+            "anchor": "/#doc-sec-195-867f978e",
+            "chunk_id": "doc-sec-195-867f978e",
+            "children": []
+          },
+          {
+            "title": "【暗裔化身】增加20点位面伤害。",
+            "anchor": "/#doc-sec-196-7e9c8d16",
+            "chunk_id": "doc-sec-196-7e9c8d16",
+            "children": []
+          },
+          {
+            "title": "【霸者神威】免疫击飞和受击硬直。",
+            "anchor": "/#doc-sec-197-b228f595",
+            "chunk_id": "doc-sec-197-b228f595",
+            "children": []
+          },
+          {
+            "title": "【大灭】增加4点生命偷取和10点位面伤害。",
+            "anchor": "/#doc-sec-198-33b58424",
+            "chunk_id": "doc-sec-198-33b58424",
+            "children": []
+          },
+          {
+            "title": "【坚毅不倒】生命值低于60%时获得20%攻击倍率提升，低于30%时获得40%攻击倍率提升。",
+            "anchor": "/#doc-sec-199-59f8bc0a",
+            "chunk_id": "doc-sec-199-59f8bc0a",
+            "children": []
+          },
+          {
+            "title": "【沙场豪情】每10秒回复已损生命值5%的血量。",
+            "anchor": "/#doc-sec-200-1552f22a",
+            "chunk_id": "doc-sec-200-1552f22a",
+            "children": []
+          },
+          {
+            "title": "【黑暗之盾】受击时触发骨甲的暗影护盾，冷却时间5秒。",
+            "anchor": "/#doc-sec-201-d96b2e41",
+            "chunk_id": "doc-sec-201-d96b2e41",
+            "children": []
+          },
+          {
+            "title": "【电刑】第三次攻击额外造成120点位面伤害，冷却时间10秒。",
+            "anchor": "/#doc-sec-202-d7802dfe",
+            "chunk_id": "doc-sec-202-d7802dfe",
+            "children": []
+          },
+          {
+            "title": "【月蚀骑士】增加20点位面伤害。",
+            "anchor": "/#doc-sec-203-8b50d0da",
+            "chunk_id": "doc-sec-203-8b50d0da",
+            "children": []
+          },
+          {
+            "title": "【相位猛冲】累计攻击3次后获得30%移速，持续3秒，冷却10秒。",
+            "anchor": "/#doc-sec-204-c1bd91d4",
+            "chunk_id": "doc-sec-204-c1bd91d4",
+            "children": []
+          },
+          {
+            "title": "【过载充能】攻击带电。",
+            "anchor": "/#doc-sec-205-da22a58e",
+            "chunk_id": "doc-sec-205-da22a58e",
+            "children": []
+          },
+          {
+            "title": "【先攻】在未受到攻击时攻击目标，会给予自身5金块，并提升自身7%造成的伤害，持续5秒，冷却10秒。",
+            "anchor": "/#doc-sec-206-febe4889",
+            "chunk_id": "doc-sec-206-febe4889",
+            "children": []
+          },
+          {
+            "title": "【冰川增幅】每次攻击造成额外40%减速，并使该目标伤害降低40%，持续1.5秒，无冷却。",
+            "anchor": "/#doc-sec-207-e66dda90",
+            "chunk_id": "doc-sec-207-e66dda90",
+            "children": []
+          },
+          {
+            "title": "【灵能投射】获得最大生命值5%的额外位面伤害。",
+            "anchor": "/#doc-sec-208-fdd76f2f",
+            "chunk_id": "doc-sec-208-fdd76f2f",
+            "children": []
+          },
+          {
+            "title": "【打我等于打自己】荆棘之甲反伤时会额外触发一次日炎格挡成功的范围伤害，日炎圣盾格挡成功时额外触发一次反甲的反伤。",
+            "anchor": "/#doc-sec-209-3dfc2dbc",
+            "chunk_id": "doc-sec-209-3dfc2dbc",
+            "children": []
+          },
+          {
+            "title": "【迅捷步伐】攻击后提升20%移速持续2秒，并回复3生命值3理智值，冷却时间5秒。",
+            "anchor": "/#doc-sec-210-50ec3db3",
+            "chunk_id": "doc-sec-210-50ec3db3",
+            "children": []
+          },
+          {
+            "title": "【奥数彗星】攻击时会在目标位置召唤流星打击，造成半径5码的40位面伤害，冷却时间5秒。",
+            "anchor": "/#doc-sec-211-7518a4de",
+            "chunk_id": "doc-sec-211-7518a4de",
+            "children": []
+          },
+          {
+            "title": "【幽灵疾步】可以踏水，在水面上移速+20%，可以在虚空行走，可以穿墙，无视碰撞体积。",
+            "anchor": "/#doc-sec-212-75dcd257",
+            "chunk_id": "doc-sec-212-75dcd257",
+            "children": []
+          },
+          {
+            "title": "【狂雷渐起】武器带电。",
+            "anchor": "/#doc-sec-213-ac219676",
+            "chunk_id": "doc-sec-213-ac219676",
+            "children": []
+          },
+          {
+            "title": "【比尔吉沃特的仁慈】获得当前饱食度20%x当前潮湿度百分比的额外物理伤害。",
+            "anchor": "/#doc-sec-214-7e9036ae",
+            "chunk_id": "doc-sec-214-7e9036ae",
+            "children": []
+          },
+          {
+            "title": "【位面商人】获得4码的额外攻击距离，获得20%的额外攻击速度。",
+            "anchor": "/#doc-sec-215-32c3eea8",
+            "chunk_id": "doc-sec-215-32c3eea8",
+            "children": []
+          },
+          {
+            "title": "【艾黎】攻击造成额外20位面伤害，同时为自己和自身半径5码范围内的玩家套上持续1.5秒的无敌护盾，冷却时间10秒。",
+            "anchor": "/#doc-sec-216-6f05e9ba",
+            "chunk_id": "doc-sec-216-6f05e9ba",
+            "children": []
+          },
+          {
+            "title": "特殊模式介绍：",
+            "anchor": "/#doc-sec-217-b143265b",
+            "chunk_id": "doc-sec-217-b143265b",
+            "children": []
+          },
+          {
+            "title": "【无限火力】",
+            "anchor": "/#doc-sec-218-b0490ea4",
+            "chunk_id": "doc-sec-218-b0490ea4",
+            "children": []
+          },
+          {
+            "title": "【无限乱斗】",
+            "anchor": "/#doc-sec-219-bb7fd0ac",
+            "chunk_id": "doc-sec-219-bb7fd0ac",
+            "children": []
+          },
+          {
+            "title": "【叠角龙】",
+            "anchor": "/#doc-sec-220-a69ced22",
+            "chunk_id": "doc-sec-220-a69ced22",
+            "children": []
+          },
+          {
+            "title": "叠层装备包括：",
+            "anchor": "/#doc-sec-221-eb46e0ef",
+            "chunk_id": "doc-sec-221-eb46e0ef",
+            "children": []
+          },
+          {
+            "title": "【末日人机】",
+            "anchor": "/#doc-sec-222-b45db249",
+            "chunk_id": "doc-sec-222-b45db249",
+            "children": []
+          },
+          {
+            "title": "详细设置如下：",
+            "anchor": "/#doc-sec-223-d46d4536",
+            "chunk_id": "doc-sec-223-d46d4536",
+            "children": []
+          },
+          {
+            "title": "【boss血量倍率】",
+            "anchor": "/#doc-sec-224-5e5e8737",
+            "chunk_id": "doc-sec-224-5e5e8737",
+            "children": []
+          },
+          {
+            "title": "【boss减伤倍率】",
+            "anchor": "/#doc-sec-225-521683fe",
+            "chunk_id": "doc-sec-225-521683fe",
+            "children": []
+          },
+          {
+            "title": "【boss伤害倍率】",
+            "anchor": "/#doc-sec-226-302a5bd4",
+            "chunk_id": "doc-sec-226-302a5bd4",
+            "children": []
+          },
+          {
+            "title": "【boss每秒回血】",
+            "anchor": "/#doc-sec-227-266c77f8",
+            "chunk_id": "doc-sec-227-266c77f8",
+            "children": []
+          },
+          {
+            "title": "【小怪血量倍率】",
+            "anchor": "/#doc-sec-228-d92b4058",
+            "chunk_id": "doc-sec-228-d92b4058",
+            "children": []
+          },
+          {
+            "title": "【小怪减伤倍率】",
+            "anchor": "/#doc-sec-229-d2586d20",
+            "chunk_id": "doc-sec-229-d2586d20",
+            "children": []
+          },
+          {
+            "title": "【小怪伤害倍率】",
+            "anchor": "/#doc-sec-230-3699f049",
+            "chunk_id": "doc-sec-230-3699f049",
+            "children": []
+          },
+          {
+            "title": "【小怪每秒回血】",
+            "anchor": "/#doc-sec-231-2cdcabfa",
+            "chunk_id": "doc-sec-231-2cdcabfa",
+            "children": []
+          },
+          {
+            "title": "【神秘商店】",
+            "anchor": "/#doc-sec-232-1ce8b71b",
+            "chunk_id": "doc-sec-232-1ce8b71b",
+            "children": []
+          },
+          {
+            "title": "【LOL金币】（无配方）",
+            "anchor": "/#doc-sec-233-65f6c1fd",
+            "chunk_id": "doc-sec-233-65f6c1fd",
+            "children": []
+          },
+          {
+            "title": "【商店锚点】（建筑栏）",
+            "anchor": "/#doc-sec-234-af2db0fa",
+            "chunk_id": "doc-sec-234-af2db0fa",
+            "children": []
+          },
+          {
+            "title": "【神秘商店】（无配方）",
+            "anchor": "/#doc-sec-235-3b825399",
+            "chunk_id": "doc-sec-235-3b825399",
+            "children": []
+          },
+          {
+            "title": "【神秘商店】配方如下：",
+            "anchor": "/#doc-sec-236-80ce106d",
+            "chunk_id": "doc-sec-236-80ce106d",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]

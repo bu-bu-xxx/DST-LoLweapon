@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>英雄联盟武器更新计划知识库</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231f2933'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-size='22' font-family='Arial' font-weight='700' fill='white'%3EKB%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">KB</span>
+        <div>
+          <h1>英雄联盟武器更新计划知识库</h1>
+          <p>在线阅读、关键词搜索与 Agent 问答</p>
+        </div>
+      </div>
+      <div class="top-actions">
+        <label class="search-box">
+          <span>搜索</span>
+          <input id="siteSearch" type="search" placeholder="输入装备、章节或关键词" />
+        </label>
+        <button id="searchSubmit" class="icon-button" title="检索并查看结果" aria-label="检索并查看结果">
+          🔍
+        </button>
+        <button id="configBtn" class="icon-button" title="API 和模型配置" aria-label="API 和模型配置">
+          ⚙
+        </button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="toc-panel">
+        <div class="panel-title">目录</div>
+        <nav id="toc"></nav>
+      </aside>
+      <section class="reader-shell">
+        <div id="searchResults" class="search-results" hidden></div>
+        <article id="content" class="doc-content"></article>
+      </section>
+    </main>
+
+    <button id="chatFab" class="chat-fab" aria-label="打开 Agent 问答">问</button>
+
+    <section id="chatPanel" class="chat-panel" hidden>
+      <header>
+        <div>
+          <h2>知识库 Agent</h2>
+          <p>回答会优先基于检索结果并给出来源</p>
+        </div>
+        <button id="closeChat" class="icon-button" title="关闭" aria-label="关闭">×</button>
+      </header>
+      <div class="chat-options">
+        <label>
+          模型
+          <select id="chatServerModel"></select>
+        </label>
+        <label class="mode-row">
+          <input id="chatEnableTavilySearch" type="checkbox" />
+          联网搜索
+        </label>
+      </div>
+      <div id="chatMessages" class="chat-messages"></div>
+      <form id="chatForm" class="chat-form">
+        <textarea id="questionInput" rows="3" maxlength="1000" placeholder="输入你想问的问题"></textarea>
+        <button type="submit">发送</button>
+      </form>
+    </section>
+
+    <dialog id="configDialog" class="config-dialog">
+      <form method="dialog">
+        <header>
+          <h2>LLM 配置</h2>
+          <button class="icon-button" value="cancel" aria-label="关闭">×</button>
+        </header>
+        <p class="hint">免费模型由本地后端代理调用。自定义模型只保存在本地浏览器，发送问题时会通过本地后端代理请求。</p>
+        <label>
+          Tavily API Key
+          <input id="tavilyApiKey" type="password" autocomplete="current-password" placeholder="tvly-..." />
+        </label>
+        <section class="custom-models">
+          <div class="section-label">已添加的自定义模型</div>
+          <div id="customModelList" class="custom-model-list"></div>
+        </section>
+        <div class="section-label">添加自定义模型</div>
+        <label>
+          显示名称
+          <input id="customModelLabel" placeholder="例如：我的 GPT-4o" />
+        </label>
+        <label>
+          API Base URL
+          <input id="apiBaseUrl" placeholder="https://api.openai.com/v1" />
+        </label>
+        <label>
+          API Key
+          <input id="apiKey" type="password" autocomplete="current-password" placeholder="sk-..." />
+        </label>
+        <label>
+          模型
+          <input id="modelName" placeholder="gpt-4o-mini" />
+        </label>
+        <footer>
+          <button id="clearConfig" type="button">清空</button>
+          <button id="saveConfig" type="button">添加</button>
+        </footer>
+      </form>
+    </dialog>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

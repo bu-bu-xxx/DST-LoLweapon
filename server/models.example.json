@@ -1,0 +1,27 @@
+[
+  {
+    "id": "deepseek-v4-flash-thinking",
+    "label": "DeepSeek V4 Flash（思考）",
+    "provider": "deepseek",
+    "endpointUrl": "https://api.deepseek.com/v1/chat/completions",
+    "apiKey": "sk-...",
+    "model": "deepseek-v4-flash",
+    "features": ["thinking"],
+    "requestOptions": {
+      "thinking": { "type": "enabled" },
+      "reasoning_effort": "high"
+    }
+  },
+  {
+    "id": "deepseek-v4-flash-direct",
+    "label": "DeepSeek V4 Flash（快速）",
+    "provider": "deepseek",
+    "endpointUrl": "https://api.deepseek.com/v1/chat/completions",
+    "apiKey": "sk-...",
+    "model": "deepseek-v4-flash",
+    "features": [],
+    "requestOptions": {
+      "thinking": { "type": "disabled" }
+    }
+  }
+]
