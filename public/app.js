@@ -48,6 +48,153 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
+function safeLinkUrl(value) {
+  const url = String(value || "").trim();
+  if (/^(https?:\/\/|\/|#)/i.test(url)) return escapeHtml(url);
+  return "#";
+}
+
+function renderInlineMarkdown(value) {
+  let html = escapeHtml(value);
+  html = html.replace(/`([^`]+)`/g, "<code>$1</code>");
+  html = html.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+  html = html.replace(/\*([^*\n]+)\*/g, "<em>$1</em>");
+  html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, url) => {
+    return `<a href="${safeLinkUrl(url)}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+  });
+  return html;
+}
+
+function splitTableRow(line) {
+  return line
+    .trim()
+    .replace(/^\|/, "")
+    .replace(/\|$/, "")
+    .split("|")
+    .map((cell) => cell.trim());
+}
+
+function isTableDivider(line) {
+  return /^\s*\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?\s*$/.test(line);
+}
+
+function renderMarkdown(markdown) {
+  const lines = String(markdown || "").replace(/\r\n/g, "\n").split("\n");
+  const blocks = [];
+  let index = 0;
+
+  const pushParagraph = (paragraphLines) => {
+    const text = paragraphLines.join(" ").trim();
+    if (text) blocks.push(`<p>${renderInlineMarkdown(text)}</p>`);
+  };
+
+  while (index < lines.length) {
+    const line = lines[index];
+    if (!line.trim()) {
+      index += 1;
+      continue;
+    }
+
+    const fence = line.match(/^```(\w+)?\s*$/);
+    if (fence) {
+      const codeLines = [];
+      index += 1;
+      while (index < lines.length && !/^```\s*$/.test(lines[index])) {
+        codeLines.push(lines[index]);
+        index += 1;
+      }
+      if (index < lines.length) index += 1;
+      blocks.push(`<pre><code>${escapeHtml(codeLines.join("\n"))}</code></pre>`);
+      continue;
+    }
+
+    const heading = line.match(/^(#{1,4})\s+(.+)$/);
+    if (heading) {
+      const level = Math.min(heading[1].length + 2, 6);
+      blocks.push(`<h${level}>${renderInlineMarkdown(heading[2])}</h${level}>`);
+      index += 1;
+      continue;
+    }
+
+    if (/^\s*---+\s*$/.test(line)) {
+      blocks.push("<hr>");
+      index += 1;
+      continue;
+    }
+
+    if (line.includes("|") && index + 1 < lines.length && isTableDivider(lines[index + 1])) {
+      const headers = splitTableRow(line);
+      index += 2;
+      const rows = [];
+      while (index < lines.length && lines[index].includes("|") && lines[index].trim()) {
+        rows.push(splitTableRow(lines[index]));
+        index += 1;
+      }
+      blocks.push(`
+        <div class="markdown-table-wrap">
+          <table>
+            <thead><tr>${headers.map((cell) => `<th>${renderInlineMarkdown(cell)}</th>`).join("")}</tr></thead>
+            <tbody>
+              ${rows
+                .map((row) => `<tr>${headers.map((_, cellIndex) => `<td>${renderInlineMarkdown(row[cellIndex] || "")}</td>`).join("")}</tr>`)
+                .join("")}
+            </tbody>
+          </table>
+        </div>
+      `);
+      continue;
+    }
+
+    if (/^\s*>\s?/.test(line)) {
+      const quoteLines = [];
+      while (index < lines.length && /^\s*>\s?/.test(lines[index])) {
+        quoteLines.push(lines[index].replace(/^\s*>\s?/, ""));
+        index += 1;
+      }
+      blocks.push(`<blockquote>${renderMarkdown(quoteLines.join("\n"))}</blockquote>`);
+      continue;
+    }
+
+    if (/^\s*[-*]\s+/.test(line)) {
+      const items = [];
+      while (index < lines.length && /^\s*[-*]\s+/.test(lines[index])) {
+        items.push(lines[index].replace(/^\s*[-*]\s+/, ""));
+        index += 1;
+      }
+      blocks.push(`<ul>${items.map((item) => `<li>${renderInlineMarkdown(item)}</li>`).join("")}</ul>`);
+      continue;
+    }
+
+    if (/^\s*\d+[.)]\s+/.test(line)) {
+      const items = [];
+      while (index < lines.length && /^\s*\d+[.)]\s+/.test(lines[index])) {
+        items.push(lines[index].replace(/^\s*\d+[.)]\s+/, ""));
+        index += 1;
+      }
+      blocks.push(`<ol>${items.map((item) => `<li>${renderInlineMarkdown(item)}</li>`).join("")}</ol>`);
+      continue;
+    }
+
+    const paragraphLines = [];
+    while (
+      index < lines.length &&
+      lines[index].trim() &&
+      !/^```/.test(lines[index]) &&
+      !/^(#{1,4})\s+/.test(lines[index]) &&
+      !/^\s*[-*]\s+/.test(lines[index]) &&
+      !/^\s*\d+[.)]\s+/.test(lines[index]) &&
+      !/^\s*>\s?/.test(lines[index]) &&
+      !(lines[index].includes("|") && index + 1 < lines.length && isTableDivider(lines[index + 1]))
+    ) {
+      paragraphLines.push(lines[index]);
+      index += 1;
+    }
+    pushParagraph(paragraphLines);
+  }
+
+  return `<div class="markdown-body">${blocks.join("")}</div>`;
+}
+
 function modelOptionValue(type, id) {
   return `${type}:${id}`;
 }
@@ -210,7 +357,11 @@ function renderSearch(query) {
 function addMessage(role, text, citations = [], webResults = []) {
   const node = document.createElement("div");
   node.className = `message ${role}`;
-  node.textContent = text;
+  if (role === "agent") {
+    node.innerHTML = renderMarkdown(text);
+  } else {
+    node.textContent = text;
+  }
   if (citations.length || webResults.length) {
     const citeBox = document.createElement("div");
     citeBox.className = "citations";
@@ -501,7 +652,7 @@ els.chatForm.addEventListener("submit", async (event) => {
   if (!question) return;
   els.questionInput.value = "";
   addMessage("user", question);
-  addMessage("agent", "正在检索知识库...");
+  addMessage("agent", "正在请求 Agent...");
   const pending = els.chatMessages.lastElementChild;
   try {
     const data = await sendQuestion(question);

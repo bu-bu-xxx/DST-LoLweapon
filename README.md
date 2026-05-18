@@ -6,8 +6,9 @@
 
 - 解析 docx，生成 `toc.json`、`chunks.json`、`search-index.json` 和图片资源。
 - 静态网页支持目录阅读、图片展示和前端关键词搜索。
-- 后端提供 `POST /api/knowledge/search` 和 `POST /api/chat`。
-- `/api/chat` 会先调用知识库检索；未配置 LLM 时返回检索式摘要，配置 OpenAI-compatible API 后返回模型回答。
+- 后端提供 `POST /api/knowledge/search` 和 `POST /api/chat`，并对检索、问答、模型测试做基础限流和结构化日志。
+- `/api/chat` 将 `knowledge_search` 作为 OpenAI-compatible tool 暴露给模型，由 Agent 自主决定是否检索、检索什么以及是否多次检索。
+- `/api/knowledge/search` 支持 `keyword` 与轻量 `hybrid` 检索模式，并支持 `rerank`、章节过滤和内容类型过滤。
 - 前端支持本地保存自定义 API Base URL、API Key 和模型名。
 
 ## 运行
@@ -35,8 +36,13 @@ POST /api/chat
 
 ```json
 {
-  "query": "心之钢",
-  "top_k": 3
+  "query": "前言",
+  "top_k": 3,
+  "mode": "hybrid",
+  "rerank": true,
+  "filters": {
+    "content_type": "all"
+  }
 }
 ```
 
@@ -44,9 +50,22 @@ POST /api/chat
 
 ```json
 {
-  "question": "心之钢有什么效果？"
+  "question": "心之钢有什么效果？",
+  "llm_config": {
+    "provider": "server_model",
+    "model_id": "deepseek-v4-flash-direct"
+  }
 }
 ```
+
+`/api/chat` 响应会返回 `citations`、`search_results` 和 `agent_trace`。其中 `agent_trace.tool_calls` 可用于检查 Agent 是否实际调用了 `knowledge_search`。
+
+当前 Agentic RAG 行为：
+
+- Chat Completions 兼容模型会收到 `knowledge_search` tool，由模型自主决定是否调用。
+- Responses 类模型会先走轻量 tool 规划协议，由模型判断是否需要调用 `knowledge_search`。
+- 模型可以多次调用 `knowledge_search`，后端会合并去重检索结果。
+- 未配置可用 LLM 时，`/api/chat` 不会强制检索知识库，只会提示需要先配置模型。
 
 ## 默认 LLM 配置
 
@@ -93,6 +112,16 @@ LLM_MODEL=gpt-4o-mini
 - 响应会返回 `web_results`，前端会展示可点击的联网来源链接。
 
 Tavily Key 只保存在浏览器 `localStorage`，不会写入项目文件。
+
+## MCP Tool
+
+项目提供一个最小 stdio MCP server：
+
+```bash
+npm.cmd run mcp
+```
+
+该服务暴露 `knowledge_search` 工具，参数与 `POST /api/knowledge/search` 基本一致，便于后续接入外部 Agent/MCP 客户端。
 
 ## 前后端分离部署
 

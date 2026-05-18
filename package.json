@@ -7,6 +7,7 @@
     "build:data": "python scripts/build_data.py",
     "server": "node server/index.mjs",
     "dev": "node server/index.mjs",
+    "mcp": "node server/mcp-server.mjs",
     "buy": "node server/index.mjs",
     "buy:now": "node server/index.mjs"
   }
