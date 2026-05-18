@@ -150,7 +150,8 @@ const knowledgeSearchSchema = {
   properties: {
     query: {
       type: "string",
-      description: "要检索的问题、关键词或改写后的查询语句。",
+      description:
+        "要检索的问题、关键词或改写后的查询语句。优先包含 DST Mod 中的装备名、道具名、建筑名、机制名、代码名、章节名；询问制作、来源、效果、配置、代码名时可加入对应词。",
     },
     top_k: {
       type: "number",
@@ -204,7 +205,7 @@ async function handleMessage(message) {
         {
           name: "knowledge_search",
           description:
-            "从当前知识库中检索相关文档片段。适合查询装备、术语、规则、配置、更新计划、图片说明、对比、总结和查找依据。复杂问题可以多次调用并改写 query。",
+            "从“饥荒联机版（Don't Starve Together, DST）英雄联盟装备 Mod”知识库中检索相关文档片段。适合查询该创意工坊 Mod 的装备、道具、建筑、制作配方、科技要求、掉落来源、主动/被动效果、耐久、修复材料、代码名、数值机制、配置项、图片说明、对比、总结和查找依据。复杂问题可以多次调用并改写 query。回答时应以 DST Mod 语境解释，不要按英雄联盟原版游戏装备来回答。",
           inputSchema: knowledgeSearchSchema,
         },
       ],
