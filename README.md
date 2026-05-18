@@ -93,3 +93,28 @@ LLM_MODEL=gpt-4o-mini
 - 响应会返回 `web_results`，前端会展示可点击的联网来源链接。
 
 Tavily Key 只保存在浏览器 `localStorage`，不会写入项目文件。
+
+## 前后端分离部署
+
+前端可以部署到 GitHub Pages，后端部署到自己的服务器。
+
+如果后端地址是：
+
+```text
+https://backend.example.com
+```
+
+并且该域名转发到后端 Node 服务的 `3000` 端口，则在网页右上角 `LLM 配置` 中填写：
+
+```text
+https://backend.example.com
+```
+
+前端会自动调用：
+
+```text
+https://backend.example.com/api/models
+https://backend.example.com/api/chat
+```
+
+本地开发时可以留空，留空表示使用当前页面同源后端，例如 `http://localhost:3000/api/chat`。

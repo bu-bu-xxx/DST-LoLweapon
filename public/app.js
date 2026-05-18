@@ -9,6 +9,7 @@ const state = {
 };
 
 let searchTimer = 0;
+let backendTimer = 0;
 let isComposingSearch = false;
 
 const els = {
@@ -28,6 +29,7 @@ const els = {
   chatServerModel: document.querySelector("#chatServerModel"),
   chatEnableTavilySearch: document.querySelector("#chatEnableTavilySearch"),
   tavilyApiKey: document.querySelector("#tavilyApiKey"),
+  backendBaseUrl: document.querySelector("#backendBaseUrl"),
   customModelList: document.querySelector("#customModelList"),
   customModelLabel: document.querySelector("#customModelLabel"),
   apiBaseUrl: document.querySelector("#apiBaseUrl"),
@@ -53,6 +55,15 @@ function modelOptionValue(type, id) {
 function parseModelOption(value) {
   const [type, ...rest] = String(value || "").split(":");
   return { type, id: rest.join(":") };
+}
+
+function normalizeBackendBaseUrl(value) {
+  return String(value || "").trim().replace(/\/+$/, "");
+}
+
+function apiUrl(path) {
+  const base = normalizeBackendBaseUrl(state.config.backendBaseUrl);
+  return `${base}${path}`;
 }
 
 function renderToc(items) {
@@ -259,6 +270,7 @@ function renderCustomModelList() {
 function fillConfigForm() {
   renderModelSelect();
   renderCustomModelList();
+  els.backendBaseUrl.value = state.config.backendBaseUrl || "";
   els.chatEnableTavilySearch.checked = Boolean(state.config.web_search?.enabled);
   els.tavilyApiKey.value = state.config.web_search?.tavilyApiKey || "";
 }
@@ -314,7 +326,7 @@ async function sendQuestion(question) {
         }
       : { enabled: false };
 
-  const response = await fetch("/api/chat", {
+  const response = await fetch(apiUrl("/api/chat"), {
     method: "POST",
     headers: { "content-type": "application/json" },
     body: JSON.stringify({ question, llm_config, web_search }),
@@ -324,23 +336,36 @@ async function sendQuestion(question) {
   return data;
 }
 
+async function loadBackendModels() {
+  const modelsResponse = await fetch(apiUrl("/api/models"))
+    .then((res) => {
+      if (!res.ok) throw new Error(`models request failed: ${res.status}`);
+      return res.json();
+    })
+    .catch(() => ({ models: [] }));
+  state.models = modelsResponse.models || [];
+  const hasSelectedServerModel = state.models.some((model) => model.id === state.config.model_id);
+  if (state.config.provider !== "custom" && (!state.config.model_id || !hasSelectedServerModel) && state.models[0]?.id) {
+    state.config.model_id = state.models[0].id;
+    state.config.provider = "server_model";
+    saveConfig();
+  }
+  renderModelSelect();
+}
+
 async function init() {
-  const [toc, chunks, index, modelsResponse] = await Promise.all([
+  const [toc, chunks, index] = await Promise.all([
     fetch("/data/toc.json").then((res) => res.json()),
     fetch("/data/chunks.json").then((res) => res.json()),
     fetch("/data/search-index.json").then((res) => res.json()),
-    fetch("/api/models").then((res) => res.json()).catch(() => ({ models: [] })),
   ]);
   state.toc = toc;
   state.chunks = chunks;
   state.index = index;
-  state.models = modelsResponse.models || [];
-  if (!state.config.model_id && state.models[0]?.id) {
-    state.config.model_id = state.models[0].id;
-  }
   state.searchDocs = prepareSearchDocs(index);
   renderToc(toc);
   renderContent(chunks);
+  await loadBackendModels();
   fillConfigForm();
 }
 
@@ -393,6 +418,21 @@ els.tavilyApiKey.addEventListener("input", () => {
   };
   saveConfig();
 });
+els.backendBaseUrl.addEventListener("change", async () => {
+  state.config.backendBaseUrl = normalizeBackendBaseUrl(els.backendBaseUrl.value);
+  saveConfig();
+  await loadBackendModels();
+  fillConfigForm();
+});
+els.backendBaseUrl.addEventListener("input", () => {
+  window.clearTimeout(backendTimer);
+  backendTimer = window.setTimeout(async () => {
+    state.config.backendBaseUrl = normalizeBackendBaseUrl(els.backendBaseUrl.value);
+    saveConfig();
+    await loadBackendModels();
+    fillConfigForm();
+  }, 700);
+});
 els.chatFab.addEventListener("click", () => {
   els.chatPanel.hidden = false;
   fillConfigForm();
@@ -413,9 +453,10 @@ els.saveConfig.addEventListener("click", () => {
     enabled: els.chatEnableTavilySearch.checked,
     tavilyApiKey: els.tavilyApiKey.value.trim(),
   };
+  state.config.backendBaseUrl = normalizeBackendBaseUrl(els.backendBaseUrl.value);
   if (!apiBaseUrl || !apiKey || !model) {
     saveConfig();
-    fillConfigForm();
+    loadBackendModels().finally(() => fillConfigForm());
     return;
   }
 
